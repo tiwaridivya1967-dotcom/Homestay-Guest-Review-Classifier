@@ -3,7 +3,7 @@ The above web tool is about helping a homestay business to automatically underst
 
 ## Tech Stack
   -React.js
-  -Node.js
+  -Fast API
   -Express.js
   -Gemini API
 ## Features
