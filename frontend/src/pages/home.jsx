@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
+import Hero from '../components/hero';
 import Card from '../components/Card';
 import Footer from '../components/Footer';
 
@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Navbar />
-      <Hero />
+      <hero />
       
       {/* Dynamic Content Section */}
       <main className="flex-grow max-w-6xl w-full mx-auto px-6 py-12">
@@ -45,9 +45,9 @@ export default function Home() {
         </div>
         
         {/* Responsive Grid layout containing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4 mt-8">
           {sampleReviews.map((review) => (
-            <Card 
+            <Card
               key={review.id} 
               title={review.title} 
               platform={review.platform} 
