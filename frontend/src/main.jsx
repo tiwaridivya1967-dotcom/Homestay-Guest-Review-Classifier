@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom'; // <-- 1. Add this import line!
-import App from './App.jsx';
-import './index.css';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom' // <-- Crucial missing piece!
+import App from './App'
+import './index.css' // Ensure your Tailwind CSS styles are imported
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter> {/* <-- 2. Put this opening tag here */}
+    <BrowserRouter>
       <App />
-    </BrowserRouter> {/* <-- 3. Put this closing tag here */}
+    </BrowserRouter>
   </React.StrictMode>,
-);
+)
